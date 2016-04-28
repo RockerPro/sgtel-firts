@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SGTEL</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="dist/img/icono.png">
+	<link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: false,
+                scrollingSpeed: 700,
+                menu: 'menu',
+                css3:false
+            });
+        });
+    </script>
+
+</head>
+<body ng-app="scotchApp">
+	
+        <div id="main">
+            <div id="header">
+                <a href="index.html"><img src="dist/img/logo.png" alt="logo sgtel" class="hidden-xs"></a>
+                <div class="connavmenu">
+                    <div class="container">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background: transparent;">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#">
+                            <a href="index.html"><img src="dist/img/logo.png" alt="logo sgtel" class="visible-xs"></a>
+                          </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-9">
+                            <div id="navbar" class="navbar-collapse collapse" style="margin-top: 10px;">
+                              <ul class="nav navbar-nav">
+                                <li class="active"><a class="opcmenu" href="index.html">Quienes Somos</a></li>
+                                <li><a class="opcmenu" href="areas_negocios.html">Áreas de Negocios</a></li>
+                                <!-- <li><a class="opcmenu" href="novedades.html">Novedades</a></li> -->
+                                <li><a class="opcmenu" href="contactanos.html">Contáctanos</a></li>
+                                <li><a class="opcmenur" href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="opcmenur" href=""><i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>  
+            </div>
+            <div id="footer">
+                <ul class="navfooter hidden-xs">
+                    <li class="opcfooter">AV. Nicolas Arriola 290 Oficina 311</li>
+                    <li class="opcfooter">(51) 340 - 3401</li>
+                    <li class="opcfooter">© 2016 Todos los Derechos Reservados</li>
+                </ul>
+                <div class="conttexs visible-xs">
+                  <p style="margin-bottom: 0px;">AV. Nicolas Arriola 290 Oficina 311</p>
+                  <p style="margin-bottom: 0px;">(51) 340 - 3401</p>
+                  <p style="margin-bottom: 0px;">© 2016 Todos los Derechos Reservados</p> 
+                </div>
+            </div>
+            <div id="fullpage">
+                <div class="section" id="section5"><h1>novedades</h1></div>
+            </div>
+
+
+        </div>
+
+</body>
+</html>

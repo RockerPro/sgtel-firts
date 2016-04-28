@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia." />
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="INFRAESTRUCTURA, SOLUCIONES MOVILES,CONSULTORIA Y EMPRENDIMIENTO, COMUNICACIONES">
+    <meta name="author" content="Cristians Bregante">
+    <meta name="image" content="http://sgtel.pe/dist/img/logo.png">
+    <meta property="og:image" content="http://sgtel.pe/dist/img/logo.png">
+    <meta property="og:title" content="SGTEL | sgtel.pe">
+    <meta property="og:description" content="Trabajamos en el desarrollo de mejores sistemas, diseño e instalaciones. Planificamos, organizamos, realizamos y controlamos las instalaciones de sistemas de telecomunicaciones. La unidad de desarrollo de aplicaciones se encuentra conformada por un equipo multidisciplinario de profesionales del más alto nivel, gracias a esto nuestros clientes poseen una gran ventaja en relación a la competencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.sgtel.com">
+    <meta property="og:site_name" content="SGTEL">
+    <title>SGTEL</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="dist/img/icono.png">
+	<link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+</head>
+<body>	
+        <div id="main">
+            <div id="header"  >
+                <a href="./"><img src="dist/img/logo.png" alt="logo sgtel" class="hidden-xs"></a>
+                <div class="connavmenu">
+                    <div class="container">
+                        <div class="navbar-header">
+                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                          <a class="navbar-brand" href="#">
+                            <a href="./"><img src="dist/img/logo.png" alt="logo sgtel" class="visible-xs"></a>
+                          </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-9">
+                            <div id="navbar" class="navbar-collapse collapse" style="margin-top: 20px;">
+                              <ul class="nav navbar-nav">
+                                <li><a class="opcmenu" href="./">Quienes Somos</a></li>
+                                <li><a class="opcmenu" href="areas_negocios.html">Áreas de Negocios</a></li>
+                                <!-- <li><a class="opcmenu" href="novedades.html">Novedades</a></li> -->
+                                <li><a class="opcmenu opcactive" href="contactanos.html">Contáctanos</a>
+                                <div class="btnmenuactive"></div></li></li>
+                                <li><a class="opcmenur" href="https://www.facebook.com/SgtelSac/info/?tab=overview" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="opcmenur" target="_blank" href="https://www.linkedin.com/company/sgtel-sac"><i class="fa fa-linkedin"></i></a></li>
+                                <li>
+                                <a href="#modal" class="iconmapa">
+                                </a>
+                                </li>
+                                <li>
+                                <a href="documentos/BROCHURE_SGTEL.pdf" download class="iconpdf">
+                                </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>  
+            </div>
+            <div id="footer">
+                <div class="container">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">Av. Nicolas Arriola 290 Oficina 311.</div>
+                    <div class="col-md-2"> (+51 1) 340 - 3401</div>
+                    <div class="col-md-4">© 2016. Todos los Derechos Reservados</div>
+                </div>  
+            </div>
+            <div id="fullpage">
+                <div class="section" id="section6">
+                    <div class="row cuerpo">
+                    <br>
+                    <br>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                        <p class="titlecont" style="display:block;">Déjenos sus datos y nos podremos en contacto con usted</p>                  
+                            <form id="contact-form" class="formcontac" role="form" autocomplete="off">  
+                                <p class="success-message">Gracias por contactarnos!</p>
+                                <div class="form-group">
+                                    <label for="contact-name"></label>
+                                    <input type="text" name="name" class="contacinput" placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-ape"></label>
+                                    <input type="text" name="apelli" class="contacinput" placeholder="Apellidos">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-telf"></label>
+                                    <input onblur="valida_dni(this)" onkeypress="return valida_num_key_press(event)" maxlength="9" minlength="7" type="text" name="telf" class="contacinput" placeholder="Teléfono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email"></label>
+                                    <input type="text" name="email" class="contacinput" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message"></label>
+                                    <textarea style="resize:none;height: auto;" rows="2" name="message" class="contacinput" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button  id="send-mail" class="message-btn btnsubmit  pull-right">Enviar</button>
+                                </div>
+                            </form>                            
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+          <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3545172555437!2d-77.01774303380458!3d-12.087864986604602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c87e7ec68689%3A0x84ccb70dbbb4c820!2sAv+Nicol%C3%A1s+Arriola+290%2C+La+Victoria+15034!5e0!3m2!1ses-419!2spe!4v1458335440826" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="bower_components/remodal/dist/remodal.min.js"></script>
+    <script type="text/javascript" src="dist/js/sendmail.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: false,
+                scrollingSpeed: 700,
+                menu: 'menu',
+                css3:false
+            });
+        });
+    //     function valida_num_key_press(event) {
+
+    //     var charCode = event.keyCode;
+
+    //     if (charCode < 48 || charCode > 57) {
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    // }
+
+    // function valida_dni(texto) {
+    //     var numeros = "0123456789";
+    //     var c = 0;
+    //     for (i = 0; i < texto.value.length; i++) {
+    //         if (numeros.indexOf(texto.value.charAt(i)) == -1) {
+    //             c++;
+    //         }
+    //     }
+    //     if (c > 0) texto.value = "";
+    // }
+    </script>
+</body>
+</html>

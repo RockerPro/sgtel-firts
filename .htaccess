@@ -1,0 +1,11 @@
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#ErrorDocument 404 /sgtel/404.html
+#ErrorDocument 403 /sgtel/404.html
+#Options -Indexes
+#RewriteCond %{QUERY_STRING} #(;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC,OR]
+#RewriteCond %{QUERY_STRING} \.\./\.\. [OR]
+#RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+#RewriteCond %{QUERY_STRING} \.[a-z0-9] [NC,OR]
+#RewriteCond %{QUERY_STRING} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+#RewriteRule .* - [F]
